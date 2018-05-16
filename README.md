@@ -11,4 +11,4 @@ Immediately significant information:
 
 ### API
 Checkout our documentation [here](http://ECS_demo.readthedocs.io/) for help
-getting started with the plumitas API!
+getting started with the API!
