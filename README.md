@@ -1,5 +1,4 @@
 ## ECS_demo
-[![Build Status](https://travis-ci.org/UWPRG/plumitas.svg?branch=master)](https://travis-ci.org/UWPRG/plumitas)
 [![Coverage Status](https://coveralls.io/repos/github/UWPRG/plumitas/badge.svg?branch=master)](https://coveralls.io/github/UWPRG/plumitas?branch=master)
 [![PyPI version](https://badge.fury.io/py/plumitas.svg)](https://badge.fury.io/py/plumitas)
 
