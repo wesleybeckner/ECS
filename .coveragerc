@@ -1,0 +1,7 @@
+[run]
+branch = True
+source = plumitas/*
+include = plumitas/*
+omit = */setup.py
+[report]
+include = plumitas/*

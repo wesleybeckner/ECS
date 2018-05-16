@@ -1,0 +1,13 @@
+*.pyc
+*~
+*.DS_Store
+_build/
+auto_examples/
+gen_api/
+.env
+dist
+build/
+*.egg-info/
+.idea/
+build_dist.sh
+.pytest_cache/

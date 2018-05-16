@@ -1,0 +1,3 @@
+# Sample file to define mail aliases also used by  git shortlog -sn  to
+# join multiple identities
+Josh Smith <jsmith07@uw.edu> anotherjoshsmith

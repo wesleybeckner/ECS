@@ -1,0 +1,39 @@
+language: python
+sudo: false
+
+deploy:
+  provider: pypi
+  user: anotherjoshsmith
+  password:
+    secure: YVAIsa9qbbJLtCcoCwH7E88WQCnytwBzaGxVkeq96B3Gg+bP8xZvTgBhOC2SJhg/XIgWV5gF38CdCwE4pZDTOUbEFnUr8ub9G8jWZW6TKqWk46ZwqjTgn2UwmUfJqS5buHsmLmWA2E046owHm50Tg/kLzX73ouw7/qfsgVrCOylas1yKG45zpLoDd6qZDQkgel7k+XeKSrOh01SnOLzzdKg+1y0u8VTPbDqmd1Ms1kj7osrBW2/N5TTZpQvtpk4YVlrZnKwk82K6icanFpzu5AhJFdhZWEqHS2vT5ylCf1+oAEU3t9JMlbeIibKLWdyH49F4FIQna3jjARtIq4NLLVed0fROk8R9w4Sf1p247Hv9zPx/gjhzBGULeJJ9jgYLj73VoqHHuNW7cW8TJxuTTDNnvnJvPqv5OnPKXyx5hju/0PWuI9KAjKXLQi61mU5vzN5kYBIM908CsNTnTJAszBvbzaK1vPMn5qFGZCw7yXZ34f9frXZwu4WggeElZXhTqDF4UXOxNLUbx17NFKZdj/YOP5lUISijF2LcOWrIzUuiOAH8GWT7FNpbz68FdOLW3qrE+VOR+pXeaPFF3yfZ1Cw2HgaYUnqW0OILGXWee+cm1k7ixsMG8ErH2XkwuGkBKwUN2vtP2lhy3hqeEq03N+8KOfUR3jdst8jc7JJluJ8=
+  on:
+    tags: true
+    repo: UWPRG/plumitas
+
+env:
+  global:
+    - PIP_DEPS="pytest coveralls pytest-cov flake8"
+
+python:
+  - '3.6'
+
+
+install:
+- travis_retry pip install $PIP_DEPS
+- travis_retry pip install numpy cython
+- travis_retry pip install -r requirements.txt
+- travis_retry pip install -e .
+
+before_script: # configure a headless display to test plot generation
+- "export DISPLAY=:99.0"
+- "sh -e /etc/init.d/xvfb start"
+- sleep 3 # give xvfb some time to start
+
+script:
+- flake8 --ignore N802,N806,W503,E126 `find . -name \*.py | grep -v setup.py | grep -v version.py | grep -v __init__.py | grep -v /docs/`
+- mkdir for_test
+- cd for_test
+- py.test --pyargs plumitas --cov-report term-missing --cov=plumitas
+
+after_success:
+- coveralls
