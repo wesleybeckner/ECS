@@ -26,16 +26,17 @@ CLASSIFIERS = ["Development Status :: 3 - Alpha",
                "Topic :: Scientific/Engineering"]
 
 # Description should be a one-liner:
-description = "ECS_demo: Pythonic analysis and visualization of Plumed output files"
+description = "ECS_demo: Pythonic analysis demo"
 # Long description will go up on the pypi page
 long_description = """
 
-Plumitas
+ECS Demo
 ========
-Pythonic analysis and visualization of Plumed output files. For more
+Pythonic package development demo for the Seattle 2018 Electro Chemical
+Society Conference. For more
 info, please go to the repository README_.
 
-.. _README: https://github.com/UWPRG/ECS_demo/blob/master/README.md
+.. _README: https://github.com/wesleybeckner/ECS_demo/blob/master/README.md
 
 License
 =======

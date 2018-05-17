@@ -50,12 +50,12 @@ def data_setup(top_words=1000, max_words=150):
     Parameters
     ----------
     top_words : int
-        defaults to 1000. Number of words to integerize 
+        defaults to 1000. Number of words to integerize
         based on top occuring words
     max_wrods : int
         defaults to 150. Number of words to include per
         tweet (i.e. the feature vector is 150 length)
-    
+
     Returns
     -------
     X : array
@@ -66,9 +66,9 @@ def data_setup(top_words=1000, max_words=150):
     data = load_data("tweet_global_warming.csv")
     print("Full dataset: {}".format(data.shape[0]))
     data['existence'].fillna(value='ambiguous',
-                             inplace=True)  # replace NA's in existence with "ambiguous"
+                             inplace=True)
     data['existence'].replace(('Y', 'N'), ('Yes', 'No'),
-                              inplace=True)  # rename so encoder doesnt get confused
+                              inplace=True)
     data = data.dropna()  # now drop NA values
     print("dataset without NaN: {}".format(data.shape[0]))
     X = data.iloc[:, 0]
@@ -99,6 +99,7 @@ def data_setup(top_words=1000, max_words=150):
     X = sequence.pad_sequences(X, maxlen=max_words)
     return X, Y
 
+
 def baseline_model(top_words=1000, max_words=150, filters=32):
     """
     preprocesses the twitter climate data. Does things like changes output
@@ -107,19 +108,19 @@ def baseline_model(top_words=1000, max_words=150, filters=32):
     Parameters
     ----------
     top_words : int
-        defaults to 1000. Number of words to integerize 
+        defaults to 1000. Number of words to integerize
         based on top occuring words
     max_wrods : int
         defaults to 150. Number of words to include per
         tweet (i.e. the feature vector is 150 length)
-    
+
     Returns
     -------
     model : Keras model object
     """
     model = Sequential()
     model.add(Embedding(top_words + 1, filters,
-                        input_length=max_words))  # is it better to preconvert using word to vec?
+                        input_length=max_words))
     model.add(Convolution1D(filters=filters, kernel_size=3, padding='same',
                             activation='relu'))
     model.add(MaxPooling1D(pool_size=2))
@@ -129,6 +130,7 @@ def baseline_model(top_words=1000, max_words=150, filters=32):
     model.compile(loss='binary_crossentropy', optimizer='adam',
                   metrics=['accuracy'])
     return model
+
 
 class Benchmark:
     """

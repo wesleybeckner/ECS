@@ -1,6 +1,4 @@
-numpy
-scipy
-matplotlib
+keras
+tensorflow
+scikit-learn
 pandas
-cython
-mdtraj
