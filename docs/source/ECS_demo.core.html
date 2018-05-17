@@ -1,0 +1,338 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ECS_demo.core &mdash; ECS_demo 0.0.1.dev2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="ECS_demo 0.0.1.dev2 documentation" href="../index.html"/>
+        <link rel="up" title="ECS_demo" href="ECS_demo.html"/>
+        <link rel="next" title="ECS_demo.tests" href="ECS_demo.tests.html"/>
+        <link rel="prev" title="ECS_demo" href="ECS_demo.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> ECS_demo
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.dev0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ECS_demo.html">ECS_demo</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ECS_demo.html#api">API</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ECS_demo.core</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ECS_demo.html#testing">Testing</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ECS_demo</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="ECS_demo.html">ECS_demo</a> &raquo;</li>
+        
+      <li>ECS_demo.core</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/source/ECS_demo.core.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-ECS_demo.core">
+<span id="ecs-demo-core"></span><h1>ECS_demo.core<a class="headerlink" href="#module-ECS_demo.core" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="ECS_demo.core.Benchmark">
+<em class="property">class </em><code class="descclassname">ECS_demo.core.</code><code class="descname">Benchmark</code><a class="headerlink" href="#ECS_demo.core.Benchmark" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>benchmark method used by the unittests</p>
+<dl class="staticmethod">
+<dt id="ECS_demo.core.Benchmark.run">
+<em class="property">static </em><code class="descname">run</code><span class="sig-paren">(</span><em>function</em><span class="sig-paren">)</span><a class="headerlink" href="#ECS_demo.core.Benchmark.run" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="ECS_demo.core.baseline_model">
+<code class="descclassname">ECS_demo.core.</code><code class="descname">baseline_model</code><span class="sig-paren">(</span><em>top_words=1000</em>, <em>max_words=150</em>, <em>filters=32</em><span class="sig-paren">)</span><a class="headerlink" href="#ECS_demo.core.baseline_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>preprocesses the twitter climate data. Does things like changes output
+to one hot encoding, performs word embedding/padding</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>top_words</strong> (<em>int</em>) – defaults to 1000. Number of words to integerize
+based on top occuring words</li>
+<li><strong>max_wrods</strong> (<em>int</em>) – defaults to 150. Number of words to include per
+tweet (i.e. the feature vector is 150 length)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>model</strong></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Keras model object</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ECS_demo.core.data_setup">
+<code class="descclassname">ECS_demo.core.</code><code class="descname">data_setup</code><span class="sig-paren">(</span><em>top_words=1000</em>, <em>max_words=150</em><span class="sig-paren">)</span><a class="headerlink" href="#ECS_demo.core.data_setup" title="Permalink to this definition">¶</a></dt>
+<dd><p>preprocesses the twitter climate data. Does things like changes output
+to one hot encoding, performs word embedding/padding</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>top_words</strong> (<em>int</em>) – defaults to 1000. Number of words to integerize
+based on top occuring words</li>
+<li><strong>max_wrods</strong> (<em>int</em>) – defaults to 150. Number of words to include per
+tweet (i.e. the feature vector is 150 length)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><ul class="simple">
+<li><strong>X</strong> (<em>array</em>) – input array (features)</li>
+<li><strong>Y</strong> (<em>array</em>) – output array (target)</li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ECS_demo.core.load_data">
+<code class="descclassname">ECS_demo.core.</code><code class="descname">load_data</code><span class="sig-paren">(</span><em>data_file_name</em>, <em>h5File=False</em><span class="sig-paren">)</span><a class="headerlink" href="#ECS_demo.core.load_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads data from module_path/data/data_file_name.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data_file_name</strong> (<em>string</em>) – name of csv file to be loaded from module_path/data/
+data_file_name.</li>
+<li><strong>h5File</strong> (<em>boolean</em><em>, </em><em>optional</em><em>, </em><em>default = False</em>) – if True opens hdf5 file</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>data</strong></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Pandas DataFrame</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ECS_demo.tests.html" class="btn btn-neutral float-right" title="ECS_demo.tests" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ECS_demo.html" class="btn btn-neutral" title="ECS_demo" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, uwprg.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.0.1.dev2',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

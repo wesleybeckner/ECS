@@ -2,8 +2,8 @@ import os
 from setuptools import setup, find_packages
 PACKAGES = find_packages()
 
-# Get version and release info, stored in plumitas/version.py
-ver_file = os.path.join('plumitas', 'version.py')
+# Get version and release info, stored in ECS_demo/version.py
+ver_file = os.path.join('ECS_demo', 'version.py')
 with open(ver_file) as f:
     exec(f.read())
 

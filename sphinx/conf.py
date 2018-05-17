@@ -59,7 +59,7 @@ author = 'uwprg'
 # built documents.
 #
 # The short X.Y version.
-version = '0.0.1.dev2'
+version = '0.0.dev0'
 # The full version, including alpha/beta/rc tags.
 release = '0.0.1.dev2'
 

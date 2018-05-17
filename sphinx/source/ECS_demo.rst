@@ -8,3 +8,9 @@ API
     ECS_demo.core
 
 
+Testing
+-------
+
+.. toctree::
+
+    ECS_demo.tests
