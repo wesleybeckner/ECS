@@ -1,7 +1,0 @@
-[run]
-branch = True
-source = ECS_demo/*
-include = ECS_demo/*
-omit = */setup.py
-[report]
-include = ECS_demo/*
