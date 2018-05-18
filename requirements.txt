@@ -1,4 +1,0 @@
-keras
-tensorflow
-scikit-learn
-pandas
