@@ -1,7 +1,7 @@
 [run]
 branch = True
-source = plumitas/*
-include = plumitas/*
+source = ECS_demo/*
+include = ECS_demo/*
 omit = */setup.py
 [report]
-include = plumitas/*
+include = ECS_demo/*
