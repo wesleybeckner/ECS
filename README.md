@@ -14,7 +14,7 @@ By the grace of open-source-dev there are several free lunches you should know o
     2. [autodocs](https://samnicholls.net/2016/06/15/how-to-sphinx-readthedocs/) where we generate documentation from just your 
     3. [docstrings](http://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html) super cool!
 1. [github pages](#ghpages)
-    1. not only is it free, but read the docs has a magnicent protocol for turning your hard-earned digital documentation to a pdf. Possibly my favorite feature I'll mention today.
+    1. Eventually I'll add a segment on getting your documentation on read the docs. But while code is still in development I've found rtd to be overkill. GH Pages is a simple alternative that hosts your static html files and doesn't require building your site on a remote server.
 3. [travis CI](#travis)
     1. "CI" stands for continuous integration. These folks provide you with a free service -- up to 1 hour of CPU time on their servers to run all of your unit tests. 
 4. [coveralls](#coveralls)
@@ -48,7 +48,6 @@ $ tree
 │   └── version.py
 ├── LICENSE
 ├── README.md
-├── appveyor.yml
 ├── docs
 │   ├── Makefile
 │   ├── _static
@@ -60,8 +59,6 @@ $ tree
 │       └── ECS_demo.tests.rst
 ├── examples
 │   ├── README.ipynb
-│   └── README.txt
-├── requirements.txt
 └── setup.py
 ```
 
