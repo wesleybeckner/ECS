@@ -8,7 +8,7 @@ deploy:
     secure: 
   on:
     tags: true
-    repo: ECS
+    repo: wesleybeckner/ECS
 
 env:
   global:
@@ -30,7 +30,7 @@ before_script: # configure a headless display to test plot generation
 - sleep 3 # give xvfb some time to start
 
 script:
-flake8 --ignore N802,N806,F401 `find . -name \*.py | grep -v setup.py | grep -v /docs/ | grep -v /sphinx/`; \ 
+flake8 --ignore N802,N806,F401 `find . -name \*.py | grep -v setup.py | grep -v /docs/ | grep -v /sphinx/`
 
 test:
 - mkdir for_test
