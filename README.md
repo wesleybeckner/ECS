@@ -1,7 +1,7 @@
 
 <a id='top'></a>
 
-# *pythonic* package development with the trimmings
+# *pythonic* package development tutorial
 
 There are great resources out there for getting your projects documented and distributed. I got started using [shablona](https://github.com/uwescience/shablona/tree/master/doc) from the eScience institute at U Washington. I would still recommend that to folks. I've found, however, that it can be helpful to start bare-bones and walk through a tutorial to build your package up, to really understand how everything is working together. So in the following, if you follow the tutorial, you'll start with a basic directory structure, and proced to add on documentation, web hosting, continuous integration, coverage, and finally deploy your package on pypi. 
 
@@ -9,7 +9,7 @@ There are great resources out there for getting your projects documented and dis
 
 By the grace of open-source-dev there are several free lunches you should know of:
 
-2. [sphinx](http://www.sphinx-doc.org/en/master/)
+2. [sphinx](#sphinx)
     1. sphinx can be a bit [finicky](https://samnicholls.net/2016/06/15/how-to-sphinx-readthedocs/). The most important feature to introduce to you to today will be 
     2. [autodocs](https://samnicholls.net/2016/06/15/how-to-sphinx-readthedocs/) where we generate documentation from just your 
     3. [docstrings](http://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html) super cool!
@@ -22,7 +22,11 @@ By the grace of open-source-dev there are several free lunches you should know o
 5. [pypi](#pypi)
     1. You want people using your code as fast as possible, right? 
 
+<a id='sphinx'></a>
+
 ## Sphinx
+
+[back to top](#top)
 
 ### Basic directory structure
 
