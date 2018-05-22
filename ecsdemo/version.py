@@ -26,7 +26,7 @@ CLASSIFIERS = ["Development Status :: 3 - Alpha",
                "Topic :: Scientific/Engineering"]
 
 # Description should be a one-liner:
-description = "ECS_demo: Pythonic analysis demo"
+description = "ecsdemo: Pythonic analysis demo"
 # Long description will go up on the pypi page
 long_description = """
 
@@ -36,11 +36,11 @@ Pythonic package development demo for the Seattle 2018 Electro Chemical
 Society Conference. For more
 info, please go to the repository README_.
 
-.. _README: https://github.com/wesleybeckner/ECS_demo/blob/master/README.md
+.. _README: https://github.com/wesleybeckner/ecsdemo/blob/master/README.md
 
 License
 =======
-``ECS_demo`` is licensed under the terms of the MIT license. See the file
+``ecsdemo`` is licensed under the terms of the MIT license. See the file
 "LICENSE" for information on the history of this software, terms & conditions
 for usage, and a DISCLAIMER OF ALL WARRANTIES.
 
@@ -50,12 +50,12 @@ Copyright (c) 2018--, Wesley Beckner, The University of Washington
 Department of Chemical Engineering.
 """
 
-NAME = "ECS_demo"
+NAME = "ecsdemo"
 MAINTAINER = "Wesley Beckner"
 MAINTAINER_EMAIL = "wab665@uw.edu"
 DESCRIPTION = description
 LONG_DESCRIPTION = long_description
-URL = "http://github.com/wesleybeckner/ECS/ECS"
+URL = "http://github.com/wesleybeckner/ECS/"
 DOWNLOAD_URL = ""
 LICENSE = "MIT"
 AUTHOR = "Pfaendtner Research Group"
@@ -65,5 +65,5 @@ MAJOR = _version_major
 MINOR = _version_minor
 MICRO = _version_micro
 VERSION = __version__
-PACKAGE_DATA = {'ECS_demo': [pjoin('data', '*')]}
+PACKAGE_DATA = {'ecsdemo': [pjoin('data', '*')]}
 REQUIRES = ["numpy"]

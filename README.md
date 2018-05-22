@@ -35,7 +35,7 @@ Clone this repo and cd into the main directory. Checkout the package organizatio
 ```
 $ tree
 .
-├── ECS_demo
+├── ecsdemo
 │   ├── __init__.py
 │   ├── core.py
 │   ├── data
@@ -44,7 +44,7 @@ $ tree
 │   ├── input.py
 │   ├── tests
 │   │   ├── __init__.py
-│   │   └── test_ECS_demo.py
+│   │   └── test_ecsdemo.py
 │   └── version.py
 ├── LICENSE
 ├── README.md
@@ -54,17 +54,17 @@ $ tree
 │   ├── conf.py
 │   ├── index.rst
 │   └── source
-│       ├── ECS_demo.core.rst
-│       ├── ECS_demo.rst
-│       └── ECS_demo.tests.rst
+│       ├── ecsdemo.core.rst
+│       ├── ecsdemo.rst
+│       └── ecsdemo.tests.rst
 ├── examples
 │   ├── README.ipynb
 └── setup.py
 ```
 
-We're about to find out just how busy this directory structure can be with these added open source features. But for now, the main project lives under `ECS_demo/` with `tests/` and `data/` subdirectories.
+We're about to find out just how busy this directory structure can be with these added open source features. But for now, the main project lives under `ecsdemo/` with `tests/` and `data/` subdirectories.
 
-Go ahead and inspect the contents of the core.py and test_ECS_demo.py files, in case you're interested. There's some common elements here in the package development world. `core.py` contains, well, the core code of the package. In a larger package you might have other modules living here such as `analysis.py` or `visualize.py`, depending on how you want to organize your code. For now, the `core.py` file contains four functions: `load_data, data_setup, baseline_model` and one class: `Benchmark`. You can learn more about pythonic naming conventions from the [pep8](https://www.python.org/dev/peps/pep-0008/) documentation.
+Go ahead and inspect the contents of the core.py and test_ecsdemo.py files, in case you're interested. There's some common elements here in the package development world. `core.py` contains, well, the core code of the package. In a larger package you might have other modules living here such as `analysis.py` or `visualize.py`, depending on how you want to organize your code. For now, the `core.py` file contains four functions: `load_data, data_setup, baseline_model` and one class: `Benchmark`. You can learn more about pythonic naming conventions from the [pep8](https://www.python.org/dev/peps/pep-0008/) documentation.
 
 ### Makefile
 
@@ -83,9 +83,9 @@ $ tree -L 2
 ├── conf.py
 ├── index.rst
 └── source
-    ├── ECS_demo.core.rst
-    ├── ECS_demo.rst
-    └── ECS_demo.tests.rst
+    ├── ecsdemo.core.rst
+    ├── ecsdemo.rst
+    └── ecsdemo.tests.rst
 ```
 
 Use your preferred browser to checkout your site: `open _build/html/index.html`. If you navigate to the API you'll see how Sphinx autmoatically formats your docstrings for you, super neat!
@@ -206,7 +206,7 @@ script:
 - flake8 --ignore N802,N806,W503,F401 `find . -name \*.py | grep -v setup.py | grep -v version.py | grep -v __init__.py | grep -v /docs/ | grep -v /sphinx/`
 - mkdir for_test
 - cd for_test
-- py.test --pyargs ECS_demo --cov-report term-missing --cov=ECS_demo
+- py.test --pyargs ecsdemo --cov-report term-missing --cov=ecsdemo
 ```
 
 you'll notice that the `.travis.yml` file contains the same flake8 and py.test commands. git add/commit/push and checkout your passing travis build.
@@ -237,7 +237,7 @@ At the end of this tutorial, your directory structure will have grown substantia
 ```
 $ tree -L 3
 .
-├── ECS_demo
+├── ecsdemo
 │   ├── __init__.py
 │   ├── __pycache__
 │   │   ├── __init__.cpython-36.pyc
@@ -251,9 +251,9 @@ $ tree -L 3
 │   ├── tests
 │   │   ├── __init__.py
 │   │   ├── __pycache__
-│   │   └── test_ECS_demo.py
+│   │   └── test_ecsdemo.py
 │   └── version.py
-├── ECS_demo.egg-info
+├── ecsdemo.egg-info
 │   ├── PKG-INFO
 │   ├── SOURCES.txt
 │   ├── dependency_links.txt
@@ -263,7 +263,7 @@ $ tree -L 3
 ├── Makefile
 ├── README.md
 ├── dist
-│   └── ECS_demo-0.0.dev0.tar.gz
+│   └── ecsdemo-0.0.dev0.tar.gz
 ├── docs
 │   ├── _sources
 │   │   ├── index.rst.txt
@@ -300,9 +300,9 @@ $ tree -L 3
 │   ├── search.html
 │   ├── searchindex.js
 │   └── source
-│       ├── ECS_demo.core.html
-│       ├── ECS_demo.html
-│       └── ECS_demo.tests.html
+│       ├── ecsdemo.core.html
+│       ├── ecsdemo.html
+│       └── ecsdemo.tests.html
 ├── examples
 │   ├── README.ipynb
 │   ├── README.txt
@@ -319,9 +319,9 @@ $ tree -L 3
     ├── conf.py
     ├── index.rst
     └── source
-        ├── ECS_demo.core.rst
-        ├── ECS_demo.rst
-        └── ECS_demo.tests.rst
+        ├── ecsdemo.core.rst
+        ├── ecsdemo.rst
+        └── ecsdemo.tests.rst
 ```
 
 ## More to come
