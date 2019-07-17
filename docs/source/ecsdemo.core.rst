@@ -1,7 +1,7 @@
-ECS_demo\.core
+ecsdemo\.core
 ==============
 
-.. automodule:: ECS_demo.core
+.. automodule:: ecsdemo.core
     :members:
     :undoc-members:
     :show-inheritance:

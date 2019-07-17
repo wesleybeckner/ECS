@@ -1,10 +1,10 @@
-ECS_demo\.tests
+ecsdemo\.tests
 ===============
 
-ECS_demo\.tests\.test\_ECS_demo
+ecsdemo\.tests\.test\_ecsdemo
 -------------------------------
 
-.. automodule:: ECS_demo.tests.test_ECS_demo
+.. automodule:: ecsdemo.tests.test_ecsdemo
     :members:
     :undoc-members:
     :show-inheritance:

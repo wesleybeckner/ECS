@@ -10,7 +10,7 @@ Welcome to the ECS_demo documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   source/ECS_demo
+   source/ecsdemo
 
 
 Indices and tables
