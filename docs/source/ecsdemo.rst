@@ -1,11 +1,11 @@
-ECS_demo
+ecsdemo
 ========
 
 API
 ---
 .. toctree::
 
-    ECS_demo.core
+    ecsdemo.core
 
 
 Testing
@@ -13,4 +13,4 @@ Testing
 
 .. toctree::
 
-    ECS_demo.tests
+    ecsdemo.tests
